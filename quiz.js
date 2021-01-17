@@ -15,7 +15,7 @@ function check(){
     if(q2=="True") {c++}
     if(q3=="True") {c++}
     if(q4=="True") {c++}
-    if(q5=="True") {c++}
+    if(q5=="False") {c++}
     if(q6=="True") {c++}
     if(q7=="True") {c++}
     if(q8=="True") {c++}

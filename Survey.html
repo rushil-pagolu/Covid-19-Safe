@@ -15,7 +15,7 @@
             font-size:20px;
             font-weight:bolfer;
             
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
             text-align:center;
             
 
@@ -124,18 +124,37 @@ ul{
 li{
     padding:18px 38px;
 }
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    background:linear-gradient(red,#990000) 
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(purple,blue) 
+}
+
+.quizq{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
     </style>
 </head>
 <body>
     <ul >
-        <li class=bro> <a href=#>Home</a></li>
-        <li class=yoo> <a href=#>General Info</a></li>
-       <li class=yoo> <a href=#>Home Remedies</a></li>
-       <li class=yoo> <a href=#>Quiz</a></li>
+        <li class=bro> <a href=App.html>Home</a></li>
+        <li class=yoo> <a href=info.html>General Info</a></li>
+       <li class=yoo> <a href=Home.html>Home Remedies</a></li>
+       <li class=yoo> <a href=Survey.html>Quiz</a></li>
        <li class=yoo> <a href=news.html>News</a></li>
-          <li class=yoo> <a href=#>Map</a></li>
+          <li class=yoo> <a href=map.html>Map</a></li>
          
      </ul>
+     <div class=quizq>
     <p class=qtitle>
         Coronavirus Symptom Quiz
     </p>
@@ -183,7 +202,7 @@ li{
 
 </div>
 <div class=q8>
-    <p>8. Do you have a feaver?</p>
+    <p>8. Do you have a fever?</p>
     <p><input type=radio name= question8 value=True>A. True</p>
     <p><input type=radio name= question8 value=False>B. False</p>
 
@@ -205,5 +224,6 @@ li{
 
 <p id="result"> </p>
 <p class=message> If your score from answering the questions on this quiz is greater than <b>4</b> we highly recommend that you find the nearest testing center and get tested because there is change you might have Covid-19. Thank you!</p>
+</div>
 </body>
 </html>
