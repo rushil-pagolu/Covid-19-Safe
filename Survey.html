@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type=text/css href=quiz.css>
+    <script type="text/javascript" src=quiz.js></script>
+    <title>Quiz</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        body{
+            color:white;
+            font-size:20px;
+            font-weight:bolfer;
+            
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align:center;
+            
+
+
+            background-image:linear-gradient(red, #990000)
+
+            
+
+        }
+        #button{
+background-color:black;
+color: white;
+font-size: 18px;
+padding:5px;
+margin:20px;
+        }
+
+.q1{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q2{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q3{
+    
+    padding:30px;
+    padding-bottom:70px;
+}.q4{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q5{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+  
+.qtitle{
+    font-size:40px;
+}
+.q6{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q7{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q8{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q9{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.q10{
+    
+    padding:30px;
+    padding-bottom:70px;
+}
+.message{
+    margin:40px;
+}
+
+ul{
+    background-color:rgb(31, 29, 29);
+    height:66px;
+    color:rgb(245, 238, 238);
+    vertical-align: center;
+font-size:large;
+list-style:none;
+}
+li{
+float:left
+
+}
+.yoo{
+    box-sizing: border-box;
+    float:right;
+   
+}
+a:hover{
+    color:red;
+    text-decoration:underline;
+    font-size:larger
+}
+a{
+    text-decoration:none;
+    color:rgb(245, 238, 238);
+    transition:color 1s, text-decoration 1s,font-size 1s;
+}
+
+ul{
+    border-bottom:1px gray solid;
+}
+li{
+    padding:18px 38px;
+}
+    </style>
+</head>
+<body>
+    <ul >
+        <li class=bro> <a href=#>Home</a></li>
+        <li class=yoo> <a href=#>General Info</a></li>
+       <li class=yoo> <a href=#>Home Remedies</a></li>
+       <li class=yoo> <a href=#>Quiz</a></li>
+       <li class=yoo> <a href=news.html>News</a></li>
+          <li class=yoo> <a href=#>Map</a></li>
+         
+     </ul>
+    <p class=qtitle>
+        Coronavirus Symptom Quiz
+    </p>
+<form name="quiz" id=quiz>
+<div class=q1>
+    <p>1. Are you experiencing a cough?</p>
+    <p><input type=radio name= question1 value=True>A. True</p>
+    <p><input type=radio name= question1 value=False>B. False</p>
+
+</div>
+<div class=q2>
+    <p>2. Do you have fatigue?</p>
+    <p><input type=radio name= question2 value=True>A. True</p>
+    <p><input type=radio name= question2 value=False>B. False</p>
+
+</div>
+<div class=q3>
+    <p>3. Are you have a shortness of breath?</p>
+    <p><input type=radio name= question3 value=True>A. True</p>
+    <p><input type=radio name= question3 value=False>B. False</p>
+
+</div>
+<div class=q4>
+    <p>4. Do you have a headache?</p>
+    <p><input type=radio name= question4 value=True>A. True</p>
+    <p><input type=radio name= question4 value=False>B. False</p>
+
+</div>
+<div class=q5>
+    <p>5. Are you still able to taste?</p>
+    <p><input type=radio name= question5 value=True>A. True</p>
+    <p><input type=radio name= question5 value=False>B. False</p>
+
+</div>
+<div class=q6>
+    <p>6. Do you have a soar throat?</p>
+    <p><input type=radio name= question6 value=True>A. True</p>
+    <p><input type=radio name= question6 value=False>B. False</p>
+
+</div>
+<div class=q7>
+    <p>7. Do your muscles or does your body ache?</p>
+    <p><input type=radio name= question7 value=True>A. True</p>
+    <p><input type=radio name= question7 value=False>B. False</p>
+
+</div>
+<div class=q8>
+    <p>8. Do you have a feaver?</p>
+    <p><input type=radio name= question8 value=True>A. True</p>
+    <p><input type=radio name= question8 value=False>B. False</p>
+
+</div>
+<div class=q9>
+    <p>9. Are you experiencing Nausea?</p>
+    <p><input type=radio name= question9 value=True>A. True</p>
+    <p><input type=radio name= question9 value=False>B. False</p>
+ 
+</div>
+<div class=q10>
+    <p>10. Did you recently have Diarrhea?</p>
+    <p><input type=radio name= question10 value=True>A. True</p>
+    <p><input type=radio name= question10 value=False>B. False</p>
+
+</div>
+<input type=button name="" value="I'm done!" id=button onclick="check()">
+</form>
+
+<p id="result"> </p>
+<p class=message> If your score from answering the questions on this quiz is greater than <b>4</b> we highly recommend that you find the nearest testing center and get tested because there is change you might have Covid-19. Thank you!</p>
+</body>
+</html>
